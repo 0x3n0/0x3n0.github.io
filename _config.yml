@@ -42,7 +42,7 @@ google_analytics:
     proxy_endpoint:
     cache_path:
 
-theme_mode: dark
+theme_mode: dual
 
 img_cdn: ''
 

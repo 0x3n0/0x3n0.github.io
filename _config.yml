@@ -6,9 +6,9 @@ lang: en
 
 timezone: Asia/Jakarta
 
-title: 0x3n0
+title: Eno
 
-tagline: Researcher | Pentester 
+tagline: Offensive Security 
 
 description: >-
 
@@ -18,14 +18,14 @@ github:
   username:
 
 twitter:
-  username: 0x3n0
+  username: idsec_
 
 social:
 
-  name: 0x3n0
+  name: idsec_
   email: 
   links:
-    - https://twitter.com/0x3n0
+    - https://twitter.com/idsec_
     - https://github.com/
     # Uncomment below to add more social links
     - https://app.hackthebox.com/profile/381523

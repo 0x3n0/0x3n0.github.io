@@ -10,7 +10,7 @@ title: Eno
 
 tagline: Offensive Security 
 
-description: >-
+description: information security enthusiast with 3 years cybersecurity experience, has skills in networking, Web Security, VAPT, AD and red team attack vectors, actively honing skills on hacking platforms in HTB.
 
 url: 'https://0x.3n0.us'
 
@@ -18,14 +18,14 @@ github:
   username:
 
 twitter:
-  username: idsec_
+  username: pwned_
 
 social:
 
-  name: idsec_
+  name: pwned_
   email: 
   links:
-    - https://twitter.com/idsec_
+    - https://twitter.com/pwned_
     - https://github.com/
     # Uncomment below to add more social links
     - https://app.hackthebox.com/profile/381523

@@ -4,7 +4,7 @@ author: Eno
 date: 2022-02-04 00:00:00 +0700
 categories: [Blogging, Tutorial, Hacking Same-Origin Policy]
 image: /assets/img/blogging/Same-Origin-Policy.jpeg
-tags: [Same-Origin Policy, SOP, CSS, HTML, Javascript, attacker, Cross-origin resource sharing, CORS, Cross-domain messaging, postMessage, JSON with Padding, JSONP, Attacking, XSS, Exploiting, Hacking Same-Origin Policy]
+tags: [0x3n0, Same-Origin Policy, SOP, CSS, HTML, Javascript, attacker, Cross-origin resource sharing, CORS, Cross-domain messaging, postMessage, JSON with Padding, JSONP, Attacking, XSS, Exploiting, Hacking Same-Origin Policy]
 ---
 
 

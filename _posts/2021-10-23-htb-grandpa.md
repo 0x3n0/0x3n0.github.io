@@ -3,7 +3,7 @@ title: HackTheBox - Grandpa
 date: 2021-10-23 00:34:46 +0700
 description: Writeups of only retired HTB machines are allowed. The machine in this article, named Grandpa, is retired.
 categories: [Hackthebox walkthroughs, Windows, Easy]
-tags: [Microsoft IIS, WebDav, davtest, metasploit, meterpreter, suggester, MS14-070, htb-windows-easy, writeup, oscp-prep]
+tags: [0x3n0, Microsoft IIS, WebDav, davtest, metasploit, meterpreter, suggester, MS14-070, htb-windows-easy, writeup, oscp-prep]
 image: /assets/img/htb/machines/windows/easy/grandpa/Grandpa.png
 ---
 

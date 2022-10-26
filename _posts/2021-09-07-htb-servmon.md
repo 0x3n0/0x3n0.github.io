@@ -2,7 +2,7 @@
 title: HackTheBox - ServMon
 date: 2021-09-07 00:00:00 +0100
 categories: [Hackthebox walkthroughs, Windows, Easy]
-tags: [ftp, NVMS-1000, LFI, crackmapexec, ssh port forwarding, port forwarding, NSClient++, GreatSCT.py, Bypassing Defender, htb-windows-easy, writeup, oscp-prep]
+tags: [0x3n0, ftp, NVMS-1000, LFI, crackmapexec, ssh port forwarding, port forwarding, NSClient++, GreatSCT.py, Bypassing Defender, htb-windows-easy, writeup, oscp-prep]
 image: /assets/img/htb/machines/windows/easy/servmon/ServMon.png
 ---
 

@@ -4,7 +4,7 @@ author: Eno
 date: 2022-02-02 00:00:00 +0700
 image: /assets/img/blogging/Mass-Assignment.jpg
 categories: [Blogging, Tutorial, Mass Assignment]
-tags: [OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, jwt, Broken User Authentication, OWASP API Security, Mass Assignment]
+tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, jwt, Broken User Authentication, OWASP API Security, Mass Assignment]
 ---
 
 ![img-description](/assets/img/blogging/Mass-Assignment.jpg)_API OWASP Security_

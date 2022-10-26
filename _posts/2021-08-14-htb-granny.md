@@ -2,7 +2,7 @@
 title: HackTheBox - Granny
 date: 2021-08-14 02:40:02 +0100
 categories: [Hackthebox walkthroughs, Windows, Easy]
-tags: [Microsoft IIS, WebDav, gobuster, PUT, curl, aspx, msfvenom, reverse-shell, Windows-Exploit-Suggester, Impacket, smbserver.py, churrasco.exe, SeImpersonatePrivilege, htb-windows-easy, writeup, oscp-prep]
+tags: [0x3n0, Microsoft IIS, WebDav, gobuster, PUT, curl, aspx, msfvenom, reverse-shell, Windows-Exploit-Suggester, Impacket, smbserver.py, churrasco.exe, SeImpersonatePrivilege, htb-windows-easy, writeup, oscp-prep]
 image: /assets/img/htb/machines/windows/easy/granny/Granny.png
 ---
 

@@ -5,7 +5,7 @@ date: 2022-02-05 00:00:00 +0700
 image: /assets/img/blogging/Security-Misconfiguration.jpeg
 description: security misconfiguration error, ancaman konstan terhadap implementasi API.
 categories: [Blogging, Tutorial, Security Misconfiguration]
-tags: [OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, jwt, SQL, Encode, parse, OWASP API Security API Security, Injection, Security Misconfiguration]
+tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, jwt, SQL, Encode, parse, OWASP API Security API Security, Injection, Security Misconfiguration]
 ---
 
 kamu mungkin pernah mendengar tentang <kbd>Top 10 OWASP</kbd> atau sepuluh kerentanan teratas yang mengancam `Webapps`. OWASP juga secara berkala memilih daftar sepuluh besar kerentanan yang mengancam <kbd>API</kbd>, yang disebut <kbd>OWASP API Security Top 10</kbd>. Sepuluh besar API saat ini adalah :

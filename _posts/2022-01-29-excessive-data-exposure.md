@@ -4,7 +4,7 @@ author: Eno
 date: 2022-01-29 00:00:00 +0000
 image: /assets/img/blogging/owasp.jpg
 categories: [Blogging, Tutorial, Excessive Data Exposure]
-tags: [OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Grapql API, Excessive Data Exposure, API Security]
+tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Grapql API, Excessive Data Exposure, API Security]
 ---
 
 Anda mungkin pernah mendengar tentang <kbd>Top 10 OWASP</kbd> atau sepuluh kerentanan teratas yang mengancam `Webapps`. OWASP juga secara berkala memilih daftar sepuluh besar kerentanan yang mengancam <kbd>API</kbd>, yang disebut <kbd>OWASP API Security Top 10</kbd>. Sepuluh besar API saat ini adalah :

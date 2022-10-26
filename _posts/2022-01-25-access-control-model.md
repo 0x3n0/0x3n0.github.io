@@ -4,7 +4,7 @@ author: Eno
 date: 2022-01-25 00:00:00 +0700
 categories: [Blogging, Tutorial, Teknik Menyerang web aplikasi]
 image: /assets/img/Access-Control-Model/Ascend_Media.gif
-tags: [Access Control Models, Broken Access Control Model, Testing Broken Access control Models, Web Applications, users, Documents, logs, Reports]
+tags: [0x3n0, Access Control Models, Broken Access Control Model, Testing Broken Access control Models, Web Applications, users, Documents, logs, Reports]
 ---
 
 <a href="https://twitter.com/0x3n0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @Enogembok</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

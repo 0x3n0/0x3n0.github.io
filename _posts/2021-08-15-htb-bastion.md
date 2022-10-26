@@ -2,7 +2,7 @@
 title: HackTheBox - Bastion
 date: 2021-08-15 03:19:06 +0100
 categories: [Hackthebox walkthroughs, Windows, Easy]
-tags: [SMB, smbclient, mount, VHD, guestmount, SAM, impacket-secretsdump, password cracking, hashcat, ssh, powershell, JAWS, mRemoteNG, htb-windows-easy, writeup, oscp-prep]
+tags: [0x3n0, SMB, smbclient, mount, VHD, guestmount, SAM, impacket-secretsdump, password cracking, hashcat, ssh, powershell, JAWS, mRemoteNG, htb-windows-easy, writeup, oscp-prep]
 image: /assets/img/htb/machines/windows/easy/bastion/Bastion.png
 ---
 

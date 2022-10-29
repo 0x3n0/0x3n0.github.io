@@ -46,7 +46,7 @@ access_token=RW5v==
 
 Token hanyalah pengkodean <kbd>base64</kbd> dari nama user, "Eno"!
 
-<kbd>API</kbd> yang tidak menggunakan string akses token sederhana juga bisa tidak aman. Misalnya, <kbd>JSON Web Tokens</kbd> (JWTs) juga dapat ditandatangani dengan tidak benar atau tidak ada tanda tangan sama sekali. Masalah ini sangat berbahaya jika token tidak aman digunakan untuk mengautentikasi `admin` atau orang lain dengan hak akses ke dalam API. Jika kamu tertarik untuk mempelajari lebih lanjut tentang potensi jebakan JWT, baca posting saya di sini: [**Token Web JSON**](https://0x3n0.github.io)
+<kbd>API</kbd> yang tidak menggunakan string akses token sederhana juga bisa tidak aman. Misalnya, <kbd>JSON Web Tokens</kbd> (JWTs) juga dapat ditandatangani dengan tidak benar atau tidak ada tanda tangan sama sekali. Masalah ini sangat berbahaya jika token tidak aman digunakan untuk mengautentikasi `admin` atau orang lain dengan hak akses ke dalam API. Jika kamu tertarik untuk mempelajari lebih lanjut tentang potensi jebakan JWT, baca posting saya di sini: [**Token Web JSON**](https://0x.3n0.us)
 
 ## Token berumur panjang
 

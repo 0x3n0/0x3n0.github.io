@@ -1,6 +1,6 @@
 ---
 title: 2FA Your Accounts
-author: mooncakeza
+author: Eno
 date: 2021-01-30 10:00am
 categories: [blog, security, security awareness]
 tags: [authentication, security, security awareness]

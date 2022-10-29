@@ -1,6 +1,6 @@
 ---
 title: Fortigate SNMPD Process Crashing
-author: mooncakeza
+author: Eno
 date: 2020-09-09 01:00pm
 categories: [blog, fortigate]
 tags: [fortigate, fortinet, firewall]

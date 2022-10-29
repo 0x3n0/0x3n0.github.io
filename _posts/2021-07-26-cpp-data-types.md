@@ -1,6 +1,6 @@
 ---
 title: C++ Data Types
-author: Clara
+author: Eno
 date: 2021-07-26 00:00:00 +0000
 categories: [Programming CPP, CPP Introduction, Data Types]
 image: /assets/img/programming/CPP/C++.png
@@ -10,7 +10,7 @@ tags: [Programming, C++, type Data Dasar, int, float, double, Character, wchar_t
 
 Dalam tutorial ini, kita akan belajar tentang type data dasar seperti `int`, `float`, `char`, dll dalam pemrograman C++.
 
-Dalam C++, type data adalah declaration untuk variable. Untuk menentukan jenis dan ukuran data yang terkait dengan variable. Sebagai contoh,
+Dalam C++, type data adalah deEnotion untuk variable. Untuk menentukan jenis dan ukuran data yang terkait dengan variable. Sebagai contoh,
 
 ```cpp
 int usia = 13;

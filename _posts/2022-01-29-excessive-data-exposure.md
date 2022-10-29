@@ -3,7 +3,7 @@ title: OWASP API Security Excessive Data Exposure
 author: Eno
 date: 2022-01-29 00:00:00 +0000
 image: /assets/img/blogging/owasp.jpg
-categories: [Blogging, Tutorial, Excessive Data Exposure]
+categories: [Blogging, 0x3n0, Excessive Data Exposure]
 tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Grapql API, Excessive Data Exposure, API Security]
 ---
 
@@ -48,8 +48,8 @@ Server API akan merespons dengan seluruh objek user yang sesuai:
 ```
 { 
   "id": 6253282, 
-  "username": "Omaigot", 
-  "screen_name": "darksec", 
+  "username": "0x3n0", 
+  "screen_name": "Eno", 
   "location": "Blk 335 Smith Street", 
   "bio": "Hacker. .", 
   "api_token": "8a48c14b04d94d81ca484e8f32daf6dc", 

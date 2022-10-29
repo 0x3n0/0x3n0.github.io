@@ -1,6 +1,6 @@
 ---
 title: Sweettooth Inc Writeup
-author: mooncakeza
+author: Eno
 date: 2021-08-02 9:00am
 categories: [tryhackme]
 tags: [tryhackme, writeup, sweettoothinc]

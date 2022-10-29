@@ -1,6 +1,6 @@
 ---
 title: FunboxEasyEnum Writeup
-author: mooncakeza
+author: Eno
 date: 2021-06-01 08:30am
 categories: [writeup, offsec, proving grounds]
 tags: [writeup, offsec, proving grounds]

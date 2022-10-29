@@ -1,6 +1,6 @@
 ---
 title: C++ Variable Literal dan constanta
-author: Clara
+author: Eno
 date: 2021-07-26 00:00:00 +0000
 categories: [Programming CPP, CPP Introduction, C++ variable Literal dan Constanta]
 image: /assets/img/programming/CPP/C++.png
@@ -99,7 +99,7 @@ Literal string adalah urutan karakter yang diapit oleh tanda kutip ganda. Sebaga
 
 |Escape order|karakter
 |:---|:--
-`"Omaigot"` |	string const
+`"0x3n0"` |	string const
 `""` |	null string const
 `" "` |	string const enam spasi
 `"x"` |	string const memiliki karakter tunggal

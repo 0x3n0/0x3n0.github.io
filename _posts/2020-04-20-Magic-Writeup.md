@@ -1,6 +1,6 @@
 ---
 title: Magic Writeup
-author: mooncakeza
+author: Eno
 date: 2020-04-20 11:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup, magic]

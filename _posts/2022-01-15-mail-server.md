@@ -3,7 +3,7 @@ title: Getting to know the Mail Server How it Works and Its Benefits
 author: Eno
 date: 2022-01-15 00:00:00 +0700
 image: /assets/img/blogging/mail_server.png
-categories: [Blogging, Tutorial, Mail Server]
+categories: [Blogging, 0x3n0, Mail Server]
 tags: [Mail, Mail User Agent, Mail Transport Agent, Mail Delivery Agent, Mail Server Protocol, Postfix, Qmail, SMTP, POP3, IMAP]
 ---
 

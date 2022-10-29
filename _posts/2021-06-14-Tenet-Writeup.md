@@ -1,6 +1,6 @@
 ---
 title: Tenet Writeup
-author: mooncakeza
+author: Eno
 date: 2021-06-14 14:30pm
 categories: [hackthebox]
 tags: [hackthebox, writeup, tenet]

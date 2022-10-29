@@ -1,6 +1,6 @@
 ---
 title: C++ if else dan if else Bersarang
-author: Omaigot
+author: 0x3n0
 date: 2021-07-27 00:00:00 +0000
 categories: [Programming CPP, CPP Flow Control, C++ if else dan if else Bersarang]
 image: /assets/img/programming/CPP/C++.png

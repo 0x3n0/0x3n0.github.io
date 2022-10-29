@@ -1,6 +1,6 @@
 ---
 title: Aliases With bashrc
-author: mooncakeza
+author: Eno
 date: 2020-10-28 11:30am
 categories: [blog]
 tags: [bash, linux, alias]

@@ -1,6 +1,6 @@
 ---
 title: Resolute Writeup
-author: mooncakeza
+author: Eno
 date: 2019-12-24 11:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup, resolute]

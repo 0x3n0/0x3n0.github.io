@@ -3,7 +3,7 @@ title: Mengenal Email Security
 author: Eno
 date: 2022-01-14 00:00:00 +0700
 image: /assets/img/blogging/Email_security.jpg
-categories: [Blogging, Tutorial, Email security]
+categories: [Blogging, 0x3n0, Email security]
 tags: [Email, 2FA metadata, Protect, header, encrypt, private key, private key, PGP, session key]
 ---
 

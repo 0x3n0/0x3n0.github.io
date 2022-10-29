@@ -1,6 +1,6 @@
 ---
 title: C++ while dan do while Loop
-author: Clara
+author: Eno
 date: 2021-07-27 00:00:00 +0000
 categories: [Programming CPP, CPP Flow Control, C++ while dan do while Loop]
 image: /assets/img/programming/CPP/cpp-do-while-loop-flowchart.png

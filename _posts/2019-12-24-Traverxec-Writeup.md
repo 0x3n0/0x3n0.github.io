@@ -1,6 +1,6 @@
 ---
 title: Traverxec Writeup
-author: mooncakeza
+author: Eno
 date: 2019-12-24 18:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup, traverxec]

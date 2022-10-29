@@ -1,6 +1,6 @@
 ---
 title: C|EH Practical Exam
-author: mooncakeza
+author: Eno
 date: 2021-01-18 9:00pm
 categories: [blog, exam, eccouncil]
 tags: [eccouncil, exam, certification]

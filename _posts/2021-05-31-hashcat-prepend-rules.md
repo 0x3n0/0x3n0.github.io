@@ -1,6 +1,6 @@
 ---
 title: hashcat prepend rules the hard way
-author: mooncakeza
+author: Eno
 date: 2021-05-31 9:30am
 categories: [blog, hashcat, howto]
 tags: [hashcat, passwords, cracking]

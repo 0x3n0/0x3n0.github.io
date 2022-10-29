@@ -1,6 +1,6 @@
 ---
 title: Monteverde Writeup
-author: mooncakeza
+author: Eno
 date: 2021-03-03 3:15pm
 categories: [hackthebox]
 tags: [hackthebox, writeup, monteverde]

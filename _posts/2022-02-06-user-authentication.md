@@ -3,7 +3,7 @@ title: OWASP API Security Broken User Authentication
 author: Eno
 date: 2021-02-06 00:00:00 +0700
 image: /assets/img/blogging/owasp1.jpg
-categories: [Blogging, Tutorial, Broken User Authentication]
+categories: [Blogging, 0x3n0, Broken User Authentication]
 tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, JWT, Broken User Authentication, OWASP API Security, API Security]
 ---
 
@@ -46,7 +46,7 @@ access_token=RW5v==
 
 Token hanyalah pengkodean <kbd>base64</kbd> dari nama user, "Eno"!
 
-<kbd>API</kbd> yang tidak menggunakan string akses token sederhana juga bisa tidak aman. Misalnya, <kbd>JSON Web Tokens</kbd> (JWTs) juga dapat ditandatangani dengan tidak benar atau tidak ada tanda tangan sama sekali. Masalah ini sangat berbahaya jika token tidak aman digunakan untuk mengautentikasi `admin` atau orang lain dengan hak akses ke dalam API. Jika kamu tertarik untuk mempelajari lebih lanjut tentang potensi jebakan JWT, baca posting saya di sini: [**Token Web JSON**](https://omaigot.github.io)
+<kbd>API</kbd> yang tidak menggunakan string akses token sederhana juga bisa tidak aman. Misalnya, <kbd>JSON Web Tokens</kbd> (JWTs) juga dapat ditandatangani dengan tidak benar atau tidak ada tanda tangan sama sekali. Masalah ini sangat berbahaya jika token tidak aman digunakan untuk mengautentikasi `admin` atau orang lain dengan hak akses ke dalam API. Jika kamu tertarik untuk mempelajari lebih lanjut tentang potensi jebakan JWT, baca posting saya di sini: [**Token Web JSON**](https://0x3n0.github.io)
 
 ## Token berumur panjang
 

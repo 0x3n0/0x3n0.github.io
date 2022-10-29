@@ -1,6 +1,6 @@
 ---
 title: Postman Writeup
-author: mooncakeza
+author: Eno
 date: 2019-12-22 8:00pm
 categories: [hackthebox]
 tags: [hackthebox, writeup, postman]

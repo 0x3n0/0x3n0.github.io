@@ -1,6 +1,6 @@
 ---
 title: African Digital Forensics CTF - Week 4
-author: mooncakeza
+author: Eno
 date: 2021-06-08 10:00am
 categories: [writeup, dfir, forensics]
 tags: [writeup, dfir, forensics, digital forenics]

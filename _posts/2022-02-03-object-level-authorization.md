@@ -3,7 +3,7 @@ title: OWASP API Security Broken Object Level Authorization
 author: Eno
 date: 2022-02-03 00:00:00 +0700
 image: /assets/img/blogging/API_Security.jpg
-categories: [Blogging, Tutorial, Broken Object Level Authorization]
+categories: [Blogging, 0x3n0, Broken Object Level Authorization]
 tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, Broken Object Level Authorization, OWASP API Security]
 ---
 

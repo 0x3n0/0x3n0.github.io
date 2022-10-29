@@ -4,7 +4,7 @@ author: Eno
 date: 2022-02-05 00:00:00 +0700
 image: /assets/img/blogging/Security-Misconfiguration.jpeg
 description: security misconfiguration error, ancaman konstan terhadap implementasi API.
-categories: [Blogging, Tutorial, Security Misconfiguration]
+categories: [Blogging, 0x3n0, Security Misconfiguration]
 tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, jwt, SQL, Encode, parse, OWASP API Security API Security, Injection, Security Misconfiguration]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: C++ for Loop
-author: Clara
+author: Eno
 date: 2021-07-27 00:00:00 +0000
 categories: [Programming CPP, CPP Flow Control, C++ for Loop]
 image: /assets/img/programming/CPP/C++.png
@@ -88,7 +88,7 @@ using namespace std;
 
 int main() {
     for (int i = 1; i <= 5; ++i) {
-        cout <<  "Omaigot! " << endl;
+        cout <<  "0x3n0! " << endl;
     }
     return 0;
 }
@@ -97,22 +97,22 @@ int main() {
 Output
 
 ```
-Omaigot!
-Omaigot!
-Omaigot!
-Omaigot!
-Omaigot!
+0x3n0!
+0x3n0!
+0x3n0!
+0x3n0!
+0x3n0!
 ```
 
 Berikut adalah cara kerja program ini
 
 |looping |	Variable| 	i <= 5 |	Tindakan
 |:---|:--|:--|:--
-1 |	`i = 1` |	`true` |	`Omaigot!` diprint dan `i` ditingkatkan menjadi `2`.
-ke-2 |	`i = 2` |	`true` |	`Omaigot!` diprint dan `i` ditingkatkan menjadi `3`.
-ke-3 |	`i = 3` |	`true` |	`Omaigot!` diprint dan `i` ditingkatkan menjadi `4`.
-4th |	`i = 4` |	`true` |	`Omaigot!` diprint dan `i` ditingkatkan menjadi `5`.
-tanggal 5 |	`i = 5` |	`true` |	`Omaigot!` diprint dan `i` ditingkatkan menjadi `6`.
+1 |	`i = 1` |	`true` |	`0x3n0!` diprint dan `i` ditingkatkan menjadi `2`.
+ke-2 |	`i = 2` |	`true` |	`0x3n0!` diprint dan `i` ditingkatkan menjadi `3`.
+ke-3 |	`i = 3` |	`true` |	`0x3n0!` diprint dan `i` ditingkatkan menjadi `4`.
+4th |	`i = 4` |	`true` |	`0x3n0!` diprint dan `i` ditingkatkan menjadi `5`.
+tanggal 5 |	`i = 5` |	`true` |	`0x3n0!` diprint dan `i` ditingkatkan menjadi `6`.
 tanggal 6 |	`i = 6` |	`false` |	Loop dihentikan
 
 ### Contoh 3: Temukan jumlah n Angka Asli pertama

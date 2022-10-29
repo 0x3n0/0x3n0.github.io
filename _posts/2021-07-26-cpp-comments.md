@@ -1,6 +1,6 @@
 ---
 title: C++ Comments
-author: Clara
+author: Eno
 date: 2021-07-26 00:00:00 +0000
 categories: [Programming CPP, CPP Introduction, C++ Comments]
 image: /assets/img/programming/CPP/C++.png

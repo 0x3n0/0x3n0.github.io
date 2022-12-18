@@ -451,3 +451,84 @@ iw dev wlan0 set channel 6
 This will change the channel of the interface "wlan0" to 6.
 
 As with the iwconfig command, changing the channel of a wireless interface using iw does not necessarily cause the interface to connect to a wireless network. To connect to a wireless network, you may need to use additional commands, such as wpa_supplicant or nmcli, depending on your network setup.
+
+## Scan for WiFi Networks (Active Scanning)
+
+```
+iw dev
+ip link show wlan0
+ip link set wlan0 up
+iw wlan0 link
+iw wlan0 scan
+iw wlan0 scan | grep "SSID:"  # Clean output of SSIDs
+iw dev wlan0 scan | grep "^BSS\|SSID\|WSP\|Authentication\|WPS\|WPA"
+```
+The `iw dev` command is used to display information about wireless devices on the system. It can be used to show the available wireless interfaces, their settings, and the wireless networks they are connected to.
+
+### An example of using iw dev might be:
+
+```bash
+$ iw dev
+phy#0
+    Interface wlan0
+        ifindex 3
+        wdev 0x1
+        addr 00:11:22:33:44:55
+        type managed
+        channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+```
+
+The `ip link show wlan0` command is used to display information about the specific wireless interface "wlan0". This can include the interface's MAC address, state (up or down), and other details.
+
+### An example of using ip link show wlan0 might be:
+
+```bash
+$ ip link show wlan0
+3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT qlen 1000
+    link/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff
+```
+
+The `ip link set wlan0 up` command is used to bring up the `wlan0` wireless interface. This means that the interface will be activated and made available for use.
+
+### An example of using ip link set wlan0 up might be:
+
+```bash
+$ ip link set wlan0 up
+$ ip link show wlan0
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DORMANT qlen 1000
+    link/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff
+```
+
+The `iw wlan0 link` command is used to show information about the wireless link (connection) for the `wlan0` interface. This can include the wireless network's MAC address, signal strength, and other details.
+
+### An example of using iw wlan0 link might be:
+
+```bash
+$ iw wlan0 link
+Connected to 00:aa:bb:cc:dd:ee (on wlan0)
+    SSID: MyWirelessNetwork
+    freq: 2412
+    RX: 12345 bytes (123 packets)
+    TX: 6789 bytes (67 packets)
+    signal: -65 dBm
+    tx bitrate: 1.0 MBit/s
+    bss flags:  short-preamble short-slot-time
+    dtim period:    2
+    beacon int: 100
+```
+
+The `iw wlan0 scan` command is used to scan for available wireless networks in the area. This can be used to find networks to connect to, or to get information about the wireless networks in the area.
+
+### An example of using iw wlan0 scan might be:
+
+```bash
+$ iw wlan0 scan
+BSS 00:aa:bb:cc:dd:ee (on wlan0)
+    SSID: MyWirelessNetwork
+    freq: 2412
+    beacon interval: 100
+    signal: -65 dBm
+    WPS:   supported
+    WPA:   supported
+    WPA
+```

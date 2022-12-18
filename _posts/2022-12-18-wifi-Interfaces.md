@@ -532,3 +532,57 @@ BSS 00:aa:bb:cc:dd:ee (on wlan0)
     WPA:   supported
     WPA
 ```
+
+## Connect to Open WiFi Network (unsecured)
+
+```
+iwconfig wlan0 essid <SSID>
+ifconfig wlan0 up
+dhclient -v wlan0
+```
+The `iwconfig wlan0 essid <SSID>` command is used to connect the `wlan0` wireless interface to a specific wireless network with the given SSID (network name).
+
+### using iwconfig wlan0 essid <SSID> might be:
+
+```bash
+$ iwconfig wlan0 essid MyWirelessNetwork
+$ iwconfig wlan0
+wlan0     IEEE 802.11  ESSID:"MyWirelessNetwork"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 00:aa:bb:cc:dd:ee   
+          Bit Rate=1 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:on
+          Link Quality=70/70  Signal level=-60 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+```
+The `ifconfig wlan0 up` command is used to bring up the "wlan0" wireless interface. This means that the interface will be activated and made available for use.
+
+### using `ifconfig wlan0 up` might be:
+
+```bash
+$ ifconfig wlan0 up
+$ ifconfig wlan0
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::211:22ff:fe33:4455  prefixlen 64  scopeid 0x20<link>
+        ether 00:11:22:33:44:55  txqueuelen 1000  (Ethernet)
+        RX packets 123  bytes 123456 (123.4 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 67  bytes 67890 (67.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+The `dhclient -v wlan0` command is used to obtain an IP address for the "wlan0" wireless interface from a DHCP server. DHCP (Dynamic Host Configuration Protocol) is a protocol used by network devices to automatically obtain network settings such as an IP address, gateway, and DNS servers.
+
+### using `dhclient -v wlan0` might be:
+```bash
+$ dhclient -v wlan0
+Listening on LPF/wlan0/00:11:22:33:44:55
+Sending on   LPF/wlan0/00:11:22:33:44:55
+Sending on   Socket/fallback
+DHCPREQUEST on wlan0 to 255.255.255.255 port 67
+DHCPACK from 192.168.1.1
+bound to 192.168.1.100 -- renewal in 35999 seconds.
+```
+This would connect the "wlan0" wireless interface to an open (unsecured) wireless network with the SSID "MyWirelessNetwork", bring up the interface, and obtain an IP address from a DHCP server.

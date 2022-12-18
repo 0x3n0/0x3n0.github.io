@@ -638,3 +638,54 @@ DHCPACK from 192.168.1.1
 bound to 192.168.1.100 -- renewal in 35999 seconds.
 ```
 This would connect the "wlan0" wireless interface to a WEP-secured wireless network with the SSID
+
+## Connect to WPA PSK Network
+
+```
+wpa_passphrase <SSID> <passphrase> >> /etc/wpa_supplicant.conf
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+dhclient -v wlan0
+ping 8.8.8.8
+```
+
+`wpa_passphrase <SSID> <passphrase> >> /etc/wpa_supplicant.conf` command is used to generate a configuration file for the wpa_supplicant utility, which is used to connect to WPA (Wi-Fi Protected Access) networks. The configuration file is saved to the `/etc/wpa_supplicant.conf` file, and includes the SSID and passphrase of the wireless network to connect to.
+
+### example of using `wpa_passphrase <SSID> <passphrase> >> /etc/wpa_supplicant.conf` :
+
+```bash
+$ wpa_passphrase MyWirelessNetwork MyPassphrase123 >> /etc/wpa_supplicant.conf
+$ cat /etc/wpa_supplicant.conf
+# network={
+#         ssid="MyWirelessNetwork"
+#         #psk="MyPassphrase123"
+#         psk=a05634c09f9a716b2a6bddd7a8f5e0f0b5e97aadf7c873d9061c2f98da17b1ba
+# }
+```
+
+`wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf` command is used to start the wpa_supplicant utility in the background, using the "wlan0" wireless interface and the configuration file located at "/etc/wpa_supplicant.conf". This will initiate the process of connecting to the wireless network specified in the configuration file.
+
+### example of using `wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf` :
+
+```bash
+$ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+Successfully initialized wpa_supplicant
+```
+`dhclient -v wlan0` command is used to obtain an IP address for the "wlan0" wireless interface from a DHCP server. DHCP (Dynamic Host Configuration Protocol) is a protocol used by network devices to automatically obtain network settings such as an IP address, gateway, and DNS servers.
+
+### example of using `dhclient -v wlan0` :
+```bash
+$ dhclient -v wlan0
+Listening on LPF/wlan0/00:11:22:33:44:55
+Sending on   LPF/wlan0/00:11:22:33:44:55
+Sending on   Socket/fallback
+DHCPREQUEST on wlan0 to 255.255.255.255 port 67
+DHCPACK from 192.168.1.1
+bound to 192.168.1.100 -- renewal in 35999 seconds.
+```
+`ping 8.8.8.8` command is used to test the connectivity of the "wlan0" interface by sending a ping (ICMP echo request) to the Google DNS server at the IP address 8.8.8.8. If the ping is successful, it means that the "wlan0" interface is connected to the network and has Internet access.
+
+### example of using `ping 8.8.8.8` :
+```bash
+$ ping 8.8.8.8
+PING 8.8
+```

@@ -305,6 +305,9 @@ Monitor mode is useful for capturing wireless traffic for analysis or debugging 
 ```
 airmon-ng start wlan0
 ```
+airmon-ng is a tool from the Aircrack-ng suite, a set of tools used for wireless security and analysis. The airmon-ng start command is used to set a wireless interface in monitor mode.
+
+In the example you provided, the command airmon-ng start wlan0 is used to set the interface wlan0 in monitor mode. This command will bring the interface down, set it to monitor mode, and bring it back up again, all in a single step.
 
 Note: In some cases, some processes (e.g. NetworkManager, wpa_supplicant) might
 interfere with other tools from aircrack-ng suite. They can be all killed using:
@@ -312,16 +315,12 @@ interfere with other tools from aircrack-ng suite. They can be all killed using:
 airmon-ng check kill
 ```
 
+In some cases, other processes such as NetworkManager or wpa_supplicant may interfere with the operation of airmon-ng and other tools from the Aircrack-ng suite. To address this, the airmon-ng check kill command can be used to check for and kill these processes if necessary.
+  
 ### Delete interface in monitor mode:
 ```
 iw dev wlan0 del
 ```
-
-airmon-ng is a tool from the Aircrack-ng suite, a set of tools used for wireless security and analysis. The airmon-ng start command is used to set a wireless interface in monitor mode.
-
-In the example you provided, the command airmon-ng start wlan0 is used to set the interface wlan0 in monitor mode. This command will bring the interface down, set it to monitor mode, and bring it back up again, all in a single step.
-
-In some cases, other processes such as NetworkManager or wpa_supplicant may interfere with the operation of airmon-ng and other tools from the Aircrack-ng suite. To address this, the airmon-ng check kill command can be used to check for and kill these processes if necessary.
 
 To delete a monitor interface created with airmon-ng start, you can use the iw dev command with the del option, as shown in the example: iw dev wlan0 del. This will delete the monitor interface and restore the original wireless interface to its normal operation.
 

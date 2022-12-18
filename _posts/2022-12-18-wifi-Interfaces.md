@@ -465,7 +465,7 @@ iw dev wlan0 scan | grep "^BSS\|SSID\|WSP\|Authentication\|WPS\|WPA"
 ```
 The `iw dev` command is used to display information about wireless devices on the system. It can be used to show the available wireless interfaces, their settings, and the wireless networks they are connected to.
 
-### An example of using iw dev might be:
+### example of using `iw dev`:
 
 ```bash
 $ iw dev
@@ -480,7 +480,7 @@ phy#0
 
 The `ip link show wlan0` command is used to display information about the specific wireless interface "wlan0". This can include the interface's MAC address, state (up or down), and other details.
 
-### An example of using ip link show wlan0 might be:
+### example of using `ip link show wlan0` :
 
 ```bash
 $ ip link show wlan0
@@ -490,7 +490,7 @@ $ ip link show wlan0
 
 The `ip link set wlan0 up` command is used to bring up the `wlan0` wireless interface. This means that the interface will be activated and made available for use.
 
-### An example of using ip link set wlan0 up might be:
+### example of using `ip link set wlan0 up` :
 
 ```bash
 $ ip link set wlan0 up
@@ -501,7 +501,7 @@ $ ip link show wlan0
 
 The `iw wlan0 link` command is used to show information about the wireless link (connection) for the `wlan0` interface. This can include the wireless network's MAC address, signal strength, and other details.
 
-### An example of using iw wlan0 link might be:
+### example of using `iw wlan0 link` :
 
 ```bash
 $ iw wlan0 link
@@ -519,7 +519,7 @@ Connected to 00:aa:bb:cc:dd:ee (on wlan0)
 
 The `iw wlan0 scan` command is used to scan for available wireless networks in the area. This can be used to find networks to connect to, or to get information about the wireless networks in the area.
 
-### An example of using iw wlan0 scan might be:
+### example of using `iw wlan0 scan` :
 
 ```bash
 $ iw wlan0 scan
@@ -542,7 +542,7 @@ dhclient -v wlan0
 ```
 The `iwconfig wlan0 essid <SSID>` command is used to connect the `wlan0` wireless interface to a specific wireless network with the given SSID (network name).
 
-### using iwconfig wlan0 essid <SSID> might be:
+### example of using iwconfig wlan0 essid <SSID> might be:
 
 ```bash
 $ iwconfig wlan0 essid MyWirelessNetwork
@@ -559,7 +559,7 @@ wlan0     IEEE 802.11  ESSID:"MyWirelessNetwork"
 ```
 The `ifconfig wlan0 up` command is used to bring up the "wlan0" wireless interface. This means that the interface will be activated and made available for use.
 
-### using `ifconfig wlan0 up` might be:
+### example of using `ifconfig wlan0 up` might be:
 
 ```bash
 $ ifconfig wlan0 up
@@ -575,7 +575,7 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 The `dhclient -v wlan0` command is used to obtain an IP address for the "wlan0" wireless interface from a DHCP server. DHCP (Dynamic Host Configuration Protocol) is a protocol used by network devices to automatically obtain network settings such as an IP address, gateway, and DNS servers.
 
-### using `dhclient -v wlan0` might be:
+### example of using `dhclient -v wlan0` might be:
 ```bash
 $ dhclient -v wlan0
 Listening on LPF/wlan0/00:11:22:33:44:55
@@ -586,3 +586,55 @@ DHCPACK from 192.168.1.1
 bound to 192.168.1.100 -- renewal in 35999 seconds.
 ```
 This would connect the "wlan0" wireless interface to an open (unsecured) wireless network with the SSID "MyWirelessNetwork", bring up the interface, and obtain an IP address from a DHCP server.
+
+## Connect to WEP Network
+
+```
+iwconfig wlan0 essid <SSID> key <key>
+ifconfig wlan0 up
+dhclient -v wlan0
+```
+`iwconfig wlan0 essid <SSID> key <key>` command is used to connect the `wlan0` wireless interface to a specific wireless network with the given SSID (network name) and security key. In this case, the security key is for a WEP (Wired Equivalent Privacy) network, which is a type of encryption used to secure wireless networks.
+
+### using iwconfig wlan0 essid <SSID> key <key> :
+```bash
+$ iwconfig wlan0 essid MyWirelessNetwork key 1234567890
+$ iwconfig wlan0
+wlan0     IEEE 802.11  ESSID:"MyWirelessNetwork"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 00:aa:bb:cc:dd:ee   
+          Bit Rate=1 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:12345-67890   Security mode:restricted
+          Power Management:on
+          Link Quality=70/70  Signal level=-60 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+```
+` ifconfig wlan0 up` command is used to bring up the `wlan0` wireless interface. This means that the interface will be activated and made available for use.
+
+### example of using `ifconfig wlan0 up` :
+```bash
+$ ifconfig wlan0 up
+$ ifconfig wlan0
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::211:22ff:fe33:4455  prefixlen 64  scopeid 0x20<link>
+        ether 00:11:22:33:44:55  txqueuelen 1000  (Ethernet)
+        RX packets 123  bytes 123456 (123.4 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 67  bytes 67890 (67.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+`dhclient -v wlan0` command is used to obtain an IP address for the `wlan0` wireless interface from a DHCP server. DHCP (Dynamic Host Configuration Protocol) is a protocol used by network devices to automatically obtain network settings such as an IP address, gateway, and DNS servers.
+
+### example of using `dhclient -v wlan0` :
+```bash
+$ dhclient -v wlan0
+Listening on LPF/wlan0/00:11:22:33:44:55
+Sending on   LPF/wlan0/00:11:22:33:44:55
+Sending on   Socket/fallback
+DHCPREQUEST on wlan0 to 255.255.255.255 port 67
+DHCPACK from 192.168.1.1
+bound to 192.168.1.100 -- renewal in 35999 seconds.
+```
+This would connect the "wlan0" wireless interface to a WEP-secured wireless network with the SSID

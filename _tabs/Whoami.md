@@ -4,46 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I'm an Information Security Enthusiast, And want to be a Red Teamer. I have been with InfoSec since 2019. I have experience in Active Directory, Web Applications, Network Penetration Testing, VAPT and Multiple Red Team Attack Vectors. I sharpen my skills on Hackthebox and I write active/retired engine posts on my blog. I'm a member of the synack red team and do Bug Hunting on their platform. I have completed two hackthebox labs Pro Rastalabs and Offshore. And I am actively looking for any opportunity in InfoSec Field for Red Team / Penetration Testing role. I have been a state level Cricketer in my past
+My name is Eno and I am a penetration tester and security researcher. I have a wide range of skills and expertise in the field of cybersecurity, including networking, web applications, vulnerability assessment, and penetration testing. I am also well-versed in various Red Team attack vectors, which allows me to effectively simulate and test the defenses of a target system or network.
 
-## Experience
+As a penetration tester, it is my job to identify and exploit vulnerabilities in a system or network in order to assess its security posture. I use a variety of tools and techniques to accomplish this, including manual testing, automated scanning, and social engineering. In addition to identifying vulnerabilities, I also work to provide recommendations on how to fix them and improve the overall security of the system.
 
-#### Synack - IT Consultant 
+As a security researcher, I am constantly learning and staying up-to-date on the latest threats and trends in the cybersecurity industry. I also contribute to the community by publishing research papers.
 
-Consultant for IT consulting company specializing in Security.
-Provide services to customers to fullfill all IT needs.
-Execute Vulnerability Assessments and conduct Penetration Testing.
-Create Lab machine for interview of junior security consultant.
-Perform phishing campaign for cybersecurity awareness training.
-Set up the webpage for the cyber security company.
-Purple Teaming.
-Perform White Box/Black Box Testing and Source Code Analysis.
-
-#### Synack Red Team - Penetration testing
-
-Comprehensive penetration testing with actionable results. Continuous security scaled by the world’s most skilled ethical hackers and AI technology. We are Synack, the most trusted Crowdsourced Security Platform.
-
-#### Skill
-
-- Vulnerability Research
-- Active Directory
-- Network Security
-- Cloud Security
-- Cybersecurity
-- Forensic Analysis
-
-#### Other Skills 
-
-- Cybercrime Investigation
-- Linux System Administration
-
-#### Programming Language
-
-- C/C++
-- Python
-- Java
-- php
-- ruby
-- go
-- javascripts
-- Ninjutsu 😂
+Overall, my goal is to help organizations and individuals protect themselves from cyber threats and ensure the security of their systems and networks.

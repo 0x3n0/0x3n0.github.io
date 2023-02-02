@@ -78,7 +78,7 @@
     .post-content {
       margin-top: 0.6rem;
       margin-bottom: 0.6rem;
-      color: #b5bdd4;
+      color: var(--post-list-text-color);
       > p {
         /* Make preview shorter on the homepage */
         margin: 0;

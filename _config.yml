@@ -8,9 +8,9 @@ timezone: Asia/Jakarta
 
 title: Eno Leriand
 
-tagline: Offensive Security 
+# tagline: Offensive Security 
 
-description: information security enthusiast with 3 years cybersecurity experience, has skills in networking, Web Security, VAPT, AD and red team attack vectors, actively honing skills on hacking platforms in HTB.
+description: information security enthusiast with 3 years of cybersecurity experience, with knowledge of computer science and networking, VAPT, and red team attack vectors focused on testing, developing tactics, and techniques to strengthen external attack surfaces
 
 url: 'https://0x.3n0.us'
 

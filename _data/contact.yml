@@ -18,10 +18,10 @@
 #  icon: 'fab fa-telegram'
 #  url: 'https://t.me/'
 
--
-  type: instagram
-  icon: 'fab fa-instagram'
-  url:  'https://instagram.com/0x3n0'
+#-
+#  type: instagram
+#  icon: 'fab fa-instagram'
+#  url:  'https://instagram.com/0x3n0'
   
 -
   type: hackthebox

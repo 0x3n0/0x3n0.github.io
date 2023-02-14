@@ -94,29 +94,21 @@ rm -rf /var/www/html/users
 
 ## Mencegah kerentanan Injection di OWASP API Security Injection
 
-Ini adalah contoh sederhana dari kerentanan Injection. Pada kenyataannya, penting untuk diingat bahwa kerentanan injection tidak selalu sejelas ini. Dan manipulasi ini dapat terjadi kapan saja, bagian data ini sedang diproses atau digunakan. Bahkan jika data user yang berbahaya tidak langsung digunakan oleh aplikasi, data yang tidak dipercaya pada akhirnya dapat berpindah ke suatu tempat program di mana ia dapat melakukan sesuatu, seperti fungsi atau query yang tidak dilindungi. Dan di sinilah menyebabkan kerusakan pada aplikasi, datanya, atau usernya.
+Untuk menghindari kerentanan Injection, perlu diingat bahwa manipulasi data dapat terjadi kapan saja saat data sedang diproses atau digunakan, meskipun tidak selalu sejelas contoh sederhana yang sering ditunjukkan. Serangan ini bisa terjadi pada bagian data yang tidak dipercaya, bahkan jika tidak digunakan secara langsung oleh aplikasi. Hal ini dapat menyebabkan kerusakan pada aplikasi, datanya, atau pengguna.
 
-Itu sebabnya Injection sangat sulit dicegah. Data yang tidak dipercaya dapat menyerang komponen aplikasi yang disentuhnya. Dan untuk setiap bagian data tidak dipercaya yang diterima aplikasi, ia perlu mendeteksi dan menetralisir serangan yang menargetkan setiap bagian aplikasi. Dan aplikasi mungkin berpikir sepotong data aman karena tidak mengandung karakter khusus yang digunakan untuk memicu <kbd>XSS</kbd> ketika penyerang bermaksud memicu <kbd>SQL Injection</kbd> sebagai gantinya. Tidak selalu mudah untuk menentukan data mana yang aman dan mana yang tidak, karena data yang aman dan tidak aman terlihat, sangat berbeda di berbagai aplikasi.
+Karena itu, mencegah Injection menjadi sulit, karena setiap bagian data yang diterima aplikasi harus diperiksa dan dinetralisir untuk menghindari serangan. Terkadang, data yang dianggap aman dapat menjadi berbahaya, seperti ketika karakter khusus digunakan untuk memicu SQL Injection oleh penyerang. Oleh karena itu, penting untuk dapat membedakan data yang aman dan tidak aman pada setiap aplikasi, meskipun tampilannya berbeda-beda.
 
 ## Input validation
 
-Jadi bagaimana kamu melindungi dari ancaman ini? 
-Hal pertama yang dapat kamu lakukan adalah memvalidasi data yang tidak dipercaya. Ini berarti kamu menerapkan daftar blokir untuk menolak input yang berisi karakter yang mungkin memengaruhi komponen aplikasi. Atau kamu bisa menerapkan daftar yang diizinkan yang hanya mengizinkan string input dengan karakter yang diketahui. Misalnya, kamu menerapkan fungsi pendaftaran. Karena kamu tau bahwa data akan dimasukkan ke dalam <kbd>SQL query</kbd>, kamu menolak input nama user yang merupakan karakter khusus dalam SQL, seperti tanda kutip tunggal. Atau, kamu juga dapat menerapkan aturan yang hanya mengizinkan karakter alfanumerik.
+Untuk melindungi dari ancaman Injection, ada beberapa tindakan yang dapat dilakukan. Salah satunya adalah dengan memvalidasi data yang tidak dipercaya menggunakan daftar blokir atau daftar yang diizinkan. Jika menggunakan daftar blokir, hindari karakter yang mungkin memengaruhi komponen aplikasi dan hanya mengizinkan string input dengan karakter yang diketahui pada daftar yang diizinkan.
 
-Namun terkadang daftar blokir sulit dilakukan karena Anda tidak selalu tahu karakter mana yang akan signifikan bagi komponen aplikasi. Jika kamu hanya melewatkan satu karakter khusus, itu dapat memungkinkan penyerang untuk melewati firewall.
+Namun, daftar blokir mungkin sulit dilakukan karena tidak semua karakter yang signifikan bagi komponen aplikasi dapat diketahui. Sebaliknya, daftar yang diizinkan mungkin terlalu membatasi dan terkadang Anda perlu menerima karakter khusus seperti tanda kutip tunggal dalam bidang input user. Misalnya, jika user bernama OxO'Enogans mendaftar, dia harus diizinkan menggunakan satu kutipan dalam namanya.
 
-Dan daftar yang diizinkan mungkin terlalu membatasi dan dalam beberapa kasus, dan terkadang kamu mungkin perlu menerima karakter khusus seperti tanda kutip tunggal ```(')``` di bidang input user. Misalnya, jika user bernama <kbd>OxO'Enogans</kbd> mendaftar, dia harus diizinkan menggunakan satu kutipan dalam namanya.
+Oleh karena itu, untuk meminimalkan risiko Injection, selain memvalidasi data, penting juga untuk mengamankan server dan database, menggunakan prepared statements dalam query database, dan membatasi akses pengguna sesuai dengan level aksesnya.
 
-## Parameterisasi
+## Parameterization
 
-Pertahanan lain yang mungkin melawan Injection adalah parameterisasi. Parameterisasi mengacu pada kompilasi bagian code dari suatu perintah sebelum parameter yang disediakan user dimasukkan.
-
-berarti bahwa alih-alih menggabungkan input user ke dalam perintah program dan mengirimkannya ke server untuk dikompilasi, kamu mendefinisikan semua logika terlebih dahulu, mengompilasinya, lalu memasukkan input user ke dalam perintah tepat sebelum di eksekusi. 
-
-Setelah input user dimasukkan ke dalam perintah terakhir, perintah tidak akan diurai dan dikompilasi lagi. Dan yang tidak ada dalam pernyataan asli akan diperlakukan sebagai data string, dan bukan code yang dapat dieksekusi. Jadi bagian logika program dari perintah kamu akan tetap utuh.
-
-Hal ini memungkinkan `database` untuk membedakan antara bagian code dan bagian data dari perintah, terlepas dari seperti apa input user. 
-Metode ini sangat efektif dalam mencegah beberapa kerentanan Injection, tetapi tidak dapat digunakan di setiap konteks dalam code.
+Parameterisasi adalah salah satu pertahanan yang dapat digunakan untuk melawan Injection. Hal ini melibatkan mengompilasi bagian code dari perintah sebelum parameter yang disediakan oleh user dimasukkan. Daripada menggabungkan input user ke dalam perintah dan mengirimkannya ke server untuk dikompilasi, semua logika didefinisikan terlebih dahulu dan input user dimasukkan tepat sebelum perintah dieksekusi. Metode ini sangat efektif dalam mencegah beberapa kerentanan Injection, tetapi tidak dapat digunakan di setiap konteks dalam code.
 
 ## Escaping
 

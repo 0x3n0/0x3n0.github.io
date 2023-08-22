@@ -126,7 +126,7 @@ Dalam hal ini, titik API harus memiliki penunjuk yang dapat berupa nama, id, ata
 
 Saya harap bisa membantu. Jika kamu memiliki pertanyaan, saran, atau permintaan, silakan hubungi kami melalui 
   
-[0x@3n0.us](mailto:0x@3n0.us)
+[0x3n0.github.io](mailto:0x3n0.github.io)
 
 See you next time.
     

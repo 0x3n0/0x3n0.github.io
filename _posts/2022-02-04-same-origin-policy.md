@@ -23,15 +23,15 @@ Dalam satu kalimat, Same-Origin Policy adalah sebagai berikut: script dari halam
 Dua URL dikatakan memiliki same-origin jika memiliki <kbd>protocol</kbd>, nama <kbd>host</kbd>, dan <kbd>port</kbd> yang sama. Katakanlah halaman A ada di
 
 ```
-[https://0x.3n0.us/](HTTPS pada port 443 secara default)
+[https://0x3n0.github.io/](HTTPS pada port 443 secara default)
 ```
 Manakah dari halaman berikut ini yang merupakan "same-origin" menurut Same-Origin Policy?
 
 ```
-https://0x.3n0.us/ (same origin, same protocol, hostname & port)
-https://0x.3n0.us/ (different origin, because protocol differs)
-https://0x.3n0.us/(different origin, because hostname differs)
-https://0x.3n0.us/:8080/0x3n0 (different origin, because port number differs)
+https://0x3n0.github.io/ (same origin, same protocol, hostname & port)
+https://0x3n0.github.io/ (different origin, because protocol differs)
+https://0x3n0.github.io/(different origin, because hostname differs)
+https://0x3n0.github.io/:8080/0x3n0 (different origin, because port number differs)
 ```
 
 ### Apa yang membatasi SOP?
@@ -83,14 +83,14 @@ Karena tag `<script>` HTML diizinkan untuk memuat code JS terlepas dari asalnya,
 Misalnya, katakanlah kita mencoba meneruskan JSON berikut ke seluruh origin:
 
 ```
-// data located at https://0x.3n0.us/get_user_articles
+// data located at https://0x3n0.github.io/get_user_articles
 {“username”: “eno”, “num_articles”: “39”}
 ```
 
 Blok data ini tidak dapat dimuat secara langsung sebagai script karena dalam format JSON:
 
 ```
-<script src=”https://0x.3n0.us/get_user_articles”></script>
+<script src=”https://0x3n0.github.io/get_user_articles”></script>
 ```
 
 Ini akan gagal karena `JSON` di atasnya bukan Javascript yang valid, dan kesalahan syntax JS akan muncul. JSONP mengatasi masalah ini dengan membungkus data dalam fungsi JS:

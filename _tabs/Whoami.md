@@ -10,4 +10,3 @@ As a penetration tester, it is my job to identify and exploit vulnerabilities in
 
 As a security researcher, I am constantly learning and staying up-to-date on the latest threats and trends in the cybersecurity industry. I also contribute to the community by publishing research papers.
 
-Overall, my goal is to help organizations and individuals protect themselves from cyber threats and ensure the security of their systems and networks.

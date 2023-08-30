@@ -7,7 +7,7 @@ image: /assets/img/Access-Control-Model/Ascend_Media.gif
 tags: [0x3n0, Access Control Models, Broken Access Control Model, Testing Broken Access control Models, Web Applications, users, Documents, logs, Reports]
 ---
 
-<a href="https://twitter.com/0x3n0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @Enogembok</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/0x3n0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @0x3n0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Sejauh ini kamu mungkin telah menemukan berbagai web aplikasi di mana kamu dapat mengundang anggota dengan akses terbatas ke informasi dalam organisasi. developer dapat membuat aplikasi atau layanan tersebut dengan menerapkan Access Control Model dalam aplikasi mereka.
 
@@ -42,9 +42,9 @@ Kamu mungkin bertanya `masalah apa yang dapat muncul jika Access Control Model t
 Sekarang, Kembali ke pertanyaan kami apa yang bisa salah saat menerapkan `Access Control Model`. Selama pengalaman saya, ada 3 kemungkinan berbeda:
 
 - **Permission tidak diterapkan dengan Benar** Dalam kasus ini beberapa terpapar ke peran/user yang tidak sah tanpa Permission yang diperlukan diterapkan dengan benar pada mereka, Misalnya jika <kbd>/api/users</kbd> diperlukan Permission `read:users`, penyerang akan dapat menjelajah <kbd>/api/users</kbd> tanpa Permission `read:users`.
-    
+
 - **Permission X override Permission Y**: Dalam hal ini jika user diberikan Permission <kbd>read:users</kbd> untuk mengakses `/api/user` API Endpoint, dia juga secara otomatis diberikan akses ke <kbd>/api/reports</kbd> endpoint. Jadi, kita dapat mengatakan Permission `read:users` mengesampingkan `read:reports`.
-    
+
 - **Set of Permission override Permission X** : Dalam hal ini, jika user diberikan <kbd>read:users</kbd> dan Permission <kbd>read:reports</kbd> untuk mengakses `/api/user` dan `/api/reports` API, dia juga secara otomatis diberikan akses ke `/api/files`, Harap dicatat bahwa kombinasi random Permission mengarah ke masalah Permission di sini, Jadi dalam hal ini, kita dapat mengatakan kombinasi random dari Permission <kbd>read:W</kbd> <kbd>read:X</kbd> dan <kbd>read:Y</kbd> memungkinkan akses <kbd>read:Z<kbd> juga.
 
 Sekarang, challage sebenarnya adalah membangun metodologi penetratin testing yang mencakup semua skenario ini dan memberi cakupan penuh dari model target. Untuk melakukan itu, kita merancang teknik yang berbeda untuk setiap jenis skenario yang dapat muncul dalam sistem. Yang akhirnya membawa kita ke teknik yang disebut berikut.
@@ -58,9 +58,9 @@ Tiga teknik/pendekatan utama kami yang efektif adalah sebagai berikut:
 - Forwards Approach
 - PBackword Approach
 - Mixed Approach
-    
+
 Untuk memahami pendekatan ini secara efektif, mari kita asumsikan kita sedang pentest ke web aplikasi (dengan menerapkan Access Control Model) yang memungkinkan kita sebagai `admin` mengundang `user` ke organisasi kita dengan Permission khusus. Permission digambarkan dalam gambar di bawah bersama dengan API yang dapat diakses. Harus jelas bahwa user dengan Permission saja akan dapat mengakses API terkait yang berdekatan dengannya. Jika dengan cara apa pun dia dapat mengakses API lain, Access Control Model akan dianggap rusak.
-    
+
 ![img-description](/assets/img/Access-Control-Model/Access_Control_Model2.png)_Access Control Model_
 
 Mari kita mulai :
@@ -90,7 +90,7 @@ Dalam kasus Forward Approach berikut, user diberikan permission `read:documents`
 ![img](/assets/img/Access-Control-Model/Access_Control_Model5.png)
 
 ### Backword Approach:
-    
+
 Dalam Backword Approach, user harus diberikan semua permission dalam model kecuali satu permission dan kita akan mencoba mengakses API masing-masing dari permission tanpa permission.
 
 #### Contoh Backword Approach 1 :
@@ -106,7 +106,7 @@ Dalam kasus Backword Approach berikut, user diberikan semua permission kecuali p
 ![img](/assets/img/Access-Control-Model/Access_Control_Model7.png)
 
 ### Mixed Approach
-    
+
 Dalam Mixed Approach, user harus diundang dengan serangkaian permission campuran dari daftar permission dan kemudian dia akan mencoba mengakses titik API terkait dari peran terbatas.
 
 #### contoh Mixed Approach 1 :
@@ -124,10 +124,10 @@ Dalam kasus Mixed Approach berikut user diberikan permission `write:docs`, `read
 ## Penutup
 Dalam hal ini, titik API harus memiliki penunjuk yang dapat berupa nama, id, atau Uid ketika direferensikan ke organisasi lain atau user dari organisasi lain mengarah ke `IDOR`. Oleh karena itu, semua IDOR adalah masalah Access control Tetapi semua masalah Access control bukan milik IDOR. .
 
-Saya harap bisa membantu. Jika kamu memiliki pertanyaan, saran, atau permintaan, silakan hubungi kami melalui 
-  
+Saya harap bisa membantu. Jika kamu memiliki pertanyaan, saran, atau permintaan, silakan hubungi kami melalui
+
 [0x3n0.github.io](mailto:0x3n0.github.io)
 
 See you next time.
-    
+
 

@@ -1,7 +1,7 @@
 ---
 title: OWASP API Security Broken User Authentication
 author: Eno
-date: 2021-02-06 00:00:00 +0700
+date: 2022-02-06 00:00:00 +0700
 image: /assets/img/blogging/owasp1.jpg
 categories: [Blogging, 0x3n0, Broken User Authentication]
 tags: [0x3n0, OWASP API, OWASP API Security Top 10, post, get, put, delete, server API, CLient API, Graphql API, JWT, Broken User Authentication, OWASP API Security, API Security]
